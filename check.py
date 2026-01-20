@@ -87,3 +87,11 @@
 # for i in name:
 #     print(i, end=" ")
 
+
+
+#Example of pass statement
+# n=4
+# if n<5:
+#       pass
+# else:
+#      print('Greater than 5')
