@@ -5,7 +5,8 @@
 #         count = count + 1 
 #         if count == 4 :
 #             continue
-#         print ( count )
+
+#         print ( count, end=" " )
 
 
 
@@ -13,23 +14,30 @@
 #Examples of for loop:---------------
 
 #37
-# for i in (1,2,3,4,5) :      
-#     print ( 'The count is:', i )
+# for var in (1,2,3,4,5) :      
+#     print ( 'The count is:', var )
 
 
 
-# for i in "NIELIT Gorakhpur":
-#     print(i)
+
+
+# for var in "NIELIT Gorakhpur":
+#     print(var, end="  ")
+
+
+
 
 
 #38
-# count=0
-# for i in "Python Programming":
-#     if i in ('a','e', 'i', 'o', 'u') :
-#         count=count+1
-#         print(i)
+# var=0
+# for x in "Python Programming":
+#     if x in ('a','e', 'i', 'o', 'u') :
+#         var=var+1
+#         print(x)
 
-# print ('The count is:', count)
+# print ('The numbers of vowels is :', var)
+
+
 
 
 
@@ -39,8 +47,8 @@
 
 #40
 # count=0
-# for i in "Python Programming":
-#       if i in ('a', 'i', 'e', 'o', 'u') :
+# for i in (1,2,3,4,5,6):
+#       if i%2 ==0:
 #           count=count+1
 # else :
 #      print ('The count is:', count)
@@ -56,10 +64,9 @@
 # count=0
 # for i in [1 ,2 ,3, 4, 5,6]:
 #     count=count+1
-#     # if count==3 :
-#     #     break
-
-# print("Count : ", count)
+#     if count==3 :
+#         break
+#     print("Count : ", count)
 
 
 
@@ -70,9 +77,9 @@
 # count=0
 # for i in [1 ,2 ,3, 4, 5]:
 #     count=count+1
-#     # if count==3 :
-#     #     continue
-#     print("Count :",count)
+#     if count==3 :
+#         continue
+# print("Count :",count)
 
 
 
@@ -82,7 +89,7 @@
 
 
 #47 (range)
-# r=range( 1,  5)
+# r=range( 1,  7)
 # for x in r :
 #    print( x)
 
@@ -92,11 +99,16 @@
 
 
 #49
-# r=range(1, 11 , 1)
+
+
+
+
+
+
+# r=range(1,11)   #(1,2,3,4,5,6,7,8,9,10)
 # sum=0
 # for i in r :
 #     sum=sum + i
-
 # print("sum ", sum)
 
 
@@ -122,14 +134,15 @@
 #enumerate function 
 # x = ('apple', 'banana', 'cherry')
 # y = enumerate(x)        #enumerate(iterable, starts)
-# print(y)
-# print(list(y))
+
+# print(list(x))
 
 
 
 
 
 # 51
+
 # Months = ["Jan", "Feb" , "Mar", "April", "May", "June"]
 # x=enumerate(Months, 2)
 # for  i in x:
@@ -169,16 +182,16 @@
 #                  break
 #            j = j + 1
 #       if(j > i/2):
-#             print(i, " is prime number.", end=" ")
+#             print(i,  end="   ")
 #       i = i + 1
 
 
 
 #57
-# for i in range(1,6):
-#     for j in range(i) :
-#        print("*", end=' ')
-#     print()
+for i in range(1,6):
+    for j in range(i) :
+       print("*", end="  ")
+    print()
 
 
 
