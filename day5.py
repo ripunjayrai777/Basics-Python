@@ -152,7 +152,7 @@
 
 DaysA = {"Mon", "Tue", "Wed" }
 DaysB = { "Wed", "Thu", "Fri", "Sat", "Sun" }
-D1 = DaysA  DaysB 
+D1 = DaysA | DaysB 
 print(D1)
 
 
