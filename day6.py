@@ -60,16 +60,37 @@
 # print(min(8,5))
 # # max(9,3)
 
-f=120
+# f=120
 
-def  fact(n):   
-    f=1
-    i=1
-    while(i<=n):
-         f=f* i
-         i=i+1    
-    return(f)
+# def  fact(n):   
+#     f=1
+#     i=1
+#     while(i<=n):
+#          f=f* i
+#          i=i+1    
+#     return(f)
 
-a=6
+# a=6
 
-print("fact=",fact(a))
+# print("fact=",fact(a))
+
+
+
+
+
+
+
+def changeme( mylist ):   
+    "This changes a passed list into this function"   
+    mylist = [1,2,3,4] 
+    # This would assi new reference in mylist  
+    print ("Values inside the function: ", mylist)   
+    return
+# Now you can call changeme function
+mylist = [10,20,30]
+changeme( mylist )
+print ("Values outside the function: ", mylist)
+
+
+
+

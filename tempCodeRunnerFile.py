@@ -1,4 +1,5 @@
-x = format(0.5,'%')           	
-# y = format(255.544545,'.2f')            
-# print(x)
-# print(y)
+cube = lambda x: x**3
+print(cube)
+
+result = cube(3)
+print(result)
