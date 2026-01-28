@@ -79,7 +79,10 @@
 #6 Lambda Functions (function in one line and for one time)
 ## Create a lambda function to compute the cube of a number. 
 
-# cube = lambda x: x**3
+ramesh= lambda x: x**3
+result = ramesh(6)
+print(result)
+
 # print(cube)
 # print(cube(2))
 # result = cube(3)
@@ -96,6 +99,11 @@
 # def my_function(*kids):
 #     print("The youngest child is ", kids[2])
 # my_function("Emil","Tobias","Linus")
+
+
+
+
+
 
 
 
@@ -132,4 +140,15 @@
 
 
 
+# def change(name, age=15):
+#     print(name, age)
 
+# change("abhay", 65)
+
+
+
+
+# def my_function(*kids):
+#     print("The youngest child is "+ kids[3])
+
+# my_function("Emil","Tobias","Linus", "naptune" )

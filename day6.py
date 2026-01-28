@@ -82,7 +82,7 @@
 
 def changeme( mylist ):   
     "This changes a passed list into this function"   
-    mylist = [1,2,3,4] 
+    mylist = [1,2,3,4]
     # This would assi new reference in mylist  
     print ("Values inside the function: ", mylist)   
     return
