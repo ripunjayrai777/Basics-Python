@@ -1,4 +1,4 @@
-#23
+##23
 # x = 5
 # y = "hello"
 # z = x + y
@@ -6,9 +6,9 @@
 
 
 
-#use try–except block
-#Taaki program crash na ho
-#Aur hum custom message dikha saken
+##use try–except block
+##Taaki program crash na ho
+##Aur hum custom message dikha saken
 
 # x = 5
 # y = "hello"
@@ -22,7 +22,7 @@
 
 
 
-#24 try-except working
+##24 try-except working
 # a = [1, 2, 3]
 
 # try:
@@ -38,18 +38,18 @@
 
 
 
-#25  
-# try:
-#     # risky code
-# except IndexError:
-#     # handle index error
-# except ValueError:
-#     # handle value error
+##25  
+## try:
+##     # risky code
+## except IndexError:
+##     # handle index error
+## except ValueError:
+##     # handle value error
 
 
 
 
-#25 multiple except blocks
+##25 multiple except blocks
 # def fun(a):
 #     if a < 4:
 #         # throws ZeroDivisionError for a = 3
@@ -106,7 +106,7 @@
 
 
 
-#27 finally clause
+##27 finally clause
 ##try-kaam karna hai
 ##except- problem ayi to report karna hai
 ##finally- office band hone se pehle system ko off karna hai
@@ -123,5 +123,5 @@
 
 
 
-#28Raising exceptions
+##28Raising exceptions
 
