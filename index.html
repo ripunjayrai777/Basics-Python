@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            margin: 0;
+        }
+        h1 {
+            color: #045702;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #yes {
+            background-color: #28a745;
+            color: white;
+        }
+        #yes:hover {
+            background-color: #218838;
+        }
+        #no {
+            background-color: #dc3545;
+            color: white;
+            position: relative;
+        }
+        #no:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my Valentine?</h1>
+    <div class="buttons">
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+    </div>
+
+    <!-- <script>
+        const noButton = document.getElementById('no');
+        const yesButton = document.getElementById('yes');
+
+        noButton.addEventListener('mouseover', () => {
+            // Move the No button to a random position within the viewport
+            const maxX = window.innerWidth - noButton.offsetWidth;
+            const maxY = window.innerHeight - noButton.offsetHeight;
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+            noButton.style.position = 'absolute';
+            noButton.style.left = `${randomX}px`;
+            noButton.style.top = `${randomY}px`;
+        });
+
+        yesButton.addEventListener('click', () => {
+            alert('Yay! You said yes! ❤️');
+        });
+    </script> -->
+
+
+    <script>
+    const noButton = document.getElementById('no');
+    const yesButton = document.getElementById('yes');
+
+    let escapeCount = 0;
+    const taunts = [
+        "Nope 😜",
+        "Too slow 😂",
+        "Almost got me!",
+        "Try harder 😈",
+        "Hehe 💃"
+    ];
+
+    noButton.style.transition = "all 0.25s ease";
+
+    noButton.addEventListener('mouseover', () => {
+        escapeCount++;
+
+        const maxX = window.innerWidth - noButton.offsetWidth;
+        const maxY = window.innerHeight - noButton.offsetHeight;
+
+        const randomX = Math.random() * maxX;
+        const randomY = Math.random() * maxY;
+
+        noButton.style.position = 'absolute';
+        noButton.style.left = `${randomX}px`;
+        noButton.style.top = `${randomY}px`;
+
+        // Change text to tease the user
+        noButton.innerText = taunts[escapeCount % taunts.length];
+
+        // Make it faster each time 😈
+        noButton.style.transition = `all ${Math.max(0.1, 0.3 - escapeCount * 0.02)}s ease`;
+    });
+
+    yesButton.addEventListener('click', () => {
+        document.body.innerHTML = `
+            <div style="
+                height:100vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-size:2.5rem;
+                flex-direction:column;
+                text-align:center;
+            ">
+                💖 Yayyyy! You said YES! 💖<br/>
+                <span style="font-size:1.5rem;">Best decision ever 😍</span>
+            </div>
+        `;
+    });
+</script>
+
+</body>
+</html>

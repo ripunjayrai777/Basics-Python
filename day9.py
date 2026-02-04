@@ -6,6 +6,11 @@
 
 
 
+
+
+
+
+
 ##use try–except block
 ##Taaki program crash na ho
 ##Aur hum custom message dikha saken
@@ -25,15 +30,17 @@
 ##24 try-except working
 # a = [1, 2, 3]
 
-# try:
+# if(True):
 #     print("Second element = %d" % (a[1]))
 
 #     # Throws error since there are only 3 elements in array
 #     print("Fourth element = %d" % (a[3]))
 
-# except:
-#     print("An error occurred")
 
+# marks = 10000
+# # perform division with 0 
+# a = marks / 0
+# print(a) 
 
 
 
@@ -106,10 +113,10 @@
 
 
 
-##27 finally clause
-##try-kaam karna hai
-##except- problem ayi to report karna hai
-##finally- office band hone se pehle system ko off karna hai
+#27 finally clause
+#try-kaam karna hai
+#except- problem ayi to report karna hai
+#finally- office band hone se pehle system ko off karna hai
 
 # try: 
 # 	k = 5/0  
@@ -121,7 +128,36 @@
 # 	print('This is always executed') 
 
 
+#try → error ho sakta hai
+#except → error aaya to
+#else → error nahi aaya to
+#finally → har haal me
+
+
 
 
 ##28Raising exceptions
+
+age = -5
+if age < 0:
+    raise ValueError("Age cannot be negative")
+
+
+
+
+
+
+
+
+# def withdraw(balance, amount):
+#     if amount > balance:
+#         raise Exception("Insufficient Balance")  # khud se error
+
+#     print("Please collect your cash")
+
+# try:
+#     withdraw(5000, 6000)
+# except Exception as e:
+#     print(e)
+
 
