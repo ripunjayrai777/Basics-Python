@@ -1,3 +1,5 @@
-name, age
-ripu, 15
-nadeem, 10
+name, age, salary
+ripu, 15, 50000
+nadeem, 10, 45000
+sajid, 20, 60000
+Abhay, 34, 80000
