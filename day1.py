@@ -8,3 +8,4 @@ A={1:100,2:200,3:300,6:400,5:500}
 print (A.items( ) )
 print (A.keys( )) 
 print (A.values( ))
+#this is updated vale lkdfgjsldfkj
